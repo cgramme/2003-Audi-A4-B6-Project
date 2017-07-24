@@ -1,11 +1,6 @@
 $(document).ready(function(){
 
-	var options = {
-            $ThumbnailNavigatorOptions: {
-                $Class: $JssorThumbnailNavigator$,
-                $ChanceToShow: 2
-            }
-        };
+    $('.top-pic').on('click', function(){alert($('html').width());});
       //slideshow
 	  var _SlideshowTransitions = [
             //Custom slide show transitions. You can add as many as you like. Will start from top first.
