@@ -87,22 +87,13 @@ html {
     cursor: pointer; }
 
 .slide-wrap {
-  margin: 20px auto;
-  position: relative;
-  width: 800px;
-  height: 600px; }
-  .slide-wrap #slider1_container {
-    text-align: center;
-    width: 800px;
-    height: 600px; }
-    .slide-wrap #slider1_container .slides {
-      width: 800px;
-      height: 600px;
+  position: relative; }
+  .slide-wrap #slider1_container .slides {
+    border-radius: 10px; }
+    .slide-wrap #slider1_container .slides div {
       border-radius: 10px; }
-      .slide-wrap #slider1_container .slides div {
+      .slide-wrap #slider1_container .slides div img {
         border-radius: 10px; }
-        .slide-wrap #slider1_container .slides div img {
-          border-radius: 10px; }
 
 .big-pic {
   position: fixed;
