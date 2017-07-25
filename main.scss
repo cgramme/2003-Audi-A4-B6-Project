@@ -7,11 +7,14 @@ html {
 	font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 	height: 100%;
 	width: 100%;
-	background-image: url(images/track.jpg) center center fixed;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-image: url(images/track.jpg) fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body{
+
 }
 
 .page-wrap{
