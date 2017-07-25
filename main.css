@@ -15,7 +15,11 @@ html {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #000; }
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .page-wrap {
   top: 0;

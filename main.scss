@@ -16,6 +16,10 @@ html {
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #000;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .page-wrap{
