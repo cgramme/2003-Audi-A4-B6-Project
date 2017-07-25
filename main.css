@@ -123,7 +123,8 @@ html {
     cursor: pointer; }
 
 .slide-wrap {
-  position: relative; }
+  position: relative;
+  margin: auto; }
   .slide-wrap #slider1_container .slides {
     border-radius: 10px; }
     .slide-wrap #slider1_container .slides div {

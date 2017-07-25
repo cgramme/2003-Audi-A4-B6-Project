@@ -54,10 +54,10 @@ function resizeWindow(){
     var width = $(window).width();
     if(width < 850){
         $('.top-pic').width(width-20).height(width/1.7).css({'margin':'auto'});
-        $('.slides').width(width-20).height(width/1.5).css({'margin-left':'10px'});
+        $('.slides, .slide-wrap, #slider1_container').width(width-20).height(width/1.5);
     }else{
-        $('.child-3d').width(800).height(450).css({'margin':'30px auto'});
-        $('.slide-wrap, #slider1_container, .slides').width(800).height(600).css({'margin':'auto'});
+        $('.top-pic').width(800).height(450).css({'margin':'30px auto'});
+        $('.slide-wrap, #slider1_container, .slides').width(800).height(600);
     }
 
     if(width < 500){
