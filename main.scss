@@ -5,17 +5,9 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p{
 }
 html {
 	font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url(images/track.jpg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #000;
+	background-image: url(images/track.jpg) center center fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
