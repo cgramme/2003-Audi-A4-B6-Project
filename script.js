@@ -32,7 +32,7 @@ $(document).ready(function(){
         $('.right-pic, .left-pic, .main-pic, .small-pic').on('click', function(){
             var width3 = $(window).width();
             var image = $(this).attr('src');
-            if(width3 <= 500){
+            if(width3 >= 800){
                 $('.big-pic').css({'background-image':'url('+image+')'});
                 $('.big-pic').removeClass('zoom-out').addClass('zoom-in');
             }
