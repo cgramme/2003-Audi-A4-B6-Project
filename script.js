@@ -51,6 +51,12 @@ function resizeWindow(){
         $('.child-3d').width(800).height(450).css({'margin':'30px auto'});
         $('.slide-wrap, #slider1_container, .slides').width(800).height(600).css({'margin':'auto'});
     }
+
+    if(width < 500){
+        $('.left-pic, .right-pic').width(width-20).height(width/1.5).css({'margin-left':'0px'});
+    }else{
+        $('.left-pic, .right-pic').width(300).height(230).css({'margin':'5px'});
+    }
 }
 
 $(window).resize(function() {
