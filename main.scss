@@ -44,12 +44,59 @@ html {
 		font-family: "Open Sans Condensed";
 		color: #fff;
 		text-shadow: 1px 1px 5px #000;
+		@media screen and (max-width: 600px) {
+	    	font-size: 50px;
+	  	}
+	}
+
+	.nav{
+		margin: 10px auto 0 auto;
+		height: 70px;
+		width: 100%;
+		border-radius: 30px;
+		@media screen and (max-width: 1000px) {
+	    	height: 50px;
+	  	}
+
+		div{
+			margin: 5px;
+			width: 250px;
+			height: 70px;
+			border-radius: 20px;
+			display: inline-block;
+			background: #fff;
+			cursor: pointer;
+			box-shadow: 1px 1px 10px #000, inset -1px -1px 5px #000;
+			@media screen and (max-width: 1000px) {
+		    	width: 40%;
+		    	height: 50px;
+		  	}
+		  	&:hover{
+		  		box-shadow: 2px 2px 15px #000, inset -1px -1px 5px #000;
+		  		background: #ddd;
+		  	}
+
+			p{
+				color: #222;
+				font-size: 30px;
+				font-family: "Open Sans Condensed";
+				padding-top: 15px;
+				text-shadow: 1px 1px 1px #555;
+				@media screen and (max-width: 1000px) {
+			    	font-size: 20px;
+			    	padding-top: 12px;
+			  	}
+			}
+		}
 	}
 }
 
 .main-content{
 	width: 100%;
-	margin-top: 50px;
+	margin-top: 20px;
+	@media screen and (max-width: 600px) {
+    	margin-top: 0;
+  	}
 
 	h2{
 		text-align: center;
@@ -57,6 +104,10 @@ html {
 		font-family: "Open Sans Condensed";
 		color: #fff;
 		text-shadow: 1px 1px 2px #000;
+		margin: 10px 0;
+		@media screen and (max-width: 600px) {
+	    	font-size: 30px;
+	  	}
 	}
 
 	.top-pic{
@@ -106,6 +157,8 @@ html {
 		box-shadow: 1px 1px 5px #000;
 		cursor: pointer;
 	}
+
+
 }
 
 .slide-wrap {
@@ -183,3 +236,39 @@ html {
     -o-animation:      ZoomOut 0.8s forwards; /* Opera 12+ */
     animation:         ZoomOut 0.8s forwards; /* IE 10+, Fx 29+ */
   }
+
+.pic-wrap{
+	width: 305px;
+	height: 318px;
+	text-align: center;
+	margin: 5px;
+	margin-top: 30px;
+	
+	.main-pic{
+		width: 300px;
+		height: 230px;
+		background-size: 100% 100%;
+		border-radius: 5px;
+		box-shadow: 1px 1px 5px #000;
+		cursor: pointer;
+	}
+
+	.small-pic{
+		display: inline-block;
+		width: 95px;
+		height: 80px;
+		background-size: 100% 100%;
+		margin: 3px;
+		border-radius: 3px;
+		box-shadow: 1px 1px 5px #000;
+		cursor: pointer;
+	}
+
+}
+
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}

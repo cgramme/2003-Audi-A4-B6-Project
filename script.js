@@ -29,7 +29,7 @@ $(document).ready(function(){
            // $('.big-pic').addClass('zoom-out');
         };
 
-        $('.right-pic, .left-pic').on('click', function(){
+        $('.right-pic, .left-pic, .main-pic, .small-pic').on('click', function(){
             var image = $(this).attr('src');
             $('.big-pic').css({'background-image':'url('+image+')'});
             $('.big-pic').removeClass('zoom-out').addClass('zoom-in');
@@ -38,6 +38,11 @@ $(document).ready(function(){
 
         $('.big-pic').on('click', function(){
             $('.big-pic').addClass('zoom-out');
+        });
+
+        $('.small-pic').mouseover(function(){
+            var image2 = $(this).attr('src');
+            $('.main-pic').attr('src',image2);
         });
 
 });
@@ -54,8 +59,14 @@ function resizeWindow(){
 
     if(width < 500){
         $('.left-pic, .right-pic').width(width-20).height(width/1.3).css({'margin-left':'0px'});
+        $('.pic-wrap').width(width-15).height(width/1.07).css({'margin-left':'0px'});
+        $('.main-pic').width(width-20).height(width/1.5);
+        $('.small-pic').width(width/3-12).height(width/4);
     }else{
         $('.left-pic, .right-pic').width(300).height(230).css({'margin':'5px'});
+        $('.pic-wrap').width(305).height(318).css({'margin':'30px 5px 5px 5px'});
+        $('.main-pic').width(300).height(230);
+        $('.small-pic').width(95).height(80);
     }
 }
 
