@@ -113,7 +113,7 @@ html {
 	}
 
 	.main-text{
-		
+		margin-top: 10px;
 		p{
 			color: #fff;
 			text-shadow: 1px 1px 1px #000;
@@ -135,10 +135,11 @@ html {
 		width: 300px;
 		height: 230px;
 		border-radius: 5px;
+		border: 1px solid #333;
 		margin: 5px;
 		box-shadow: 1px 1px 5px #000;
 		cursor: pointer;
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 500px) {
 	    	float: none;
 	    	margin: 5px auto;
 	  	}
@@ -149,10 +150,11 @@ html {
 		width: 300px;
 		height: 230px;
 		border-radius: 5px;
+		border: 1px solid #333;
 		margin: 5px;
 		box-shadow: 1px 1px 5px #000;
 		cursor: pointer;
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 500px) {
 	    	float: none;
 	    	margin: 5px auto;
 	  	}
