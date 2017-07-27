@@ -113,6 +113,10 @@ html {
     margin: 5px;
     box-shadow: 1px 1px 5px #000;
     cursor: pointer; }
+    @media screen and (max-width: 600px) {
+      .main-content .left-pic {
+        float: none;
+        margin: 5px auto; } }
   .main-content .right-pic {
     float: right;
     width: 300px;
@@ -121,16 +125,39 @@ html {
     margin: 5px;
     box-shadow: 1px 1px 5px #000;
     cursor: pointer; }
+    @media screen and (max-width: 600px) {
+      .main-content .right-pic {
+        float: none;
+        margin: 5px auto; } }
 
 .slide-wrap {
   position: relative;
-  margin: auto; }
-  .slide-wrap #slider1_container .slides {
-    border-radius: 10px; }
-    .slide-wrap #slider1_container .slides div {
+  background: #222;
+  margin: auto;
+  width: 100%;
+  height: 600px;
+  padding: 10px 0;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #000;
+  border: 2px solid #111; }
+  @media screen and (max-width: 850px) {
+    .slide-wrap {
+      border: none;
+      padding: 0; } }
+  .slide-wrap #slider1_container {
+    border: 3px solid #333;
+    border-radius: 10px;
+    position: relative;
+    margin: auto; }
+    @media screen and (max-width: 850px) {
+      .slide-wrap #slider1_container {
+        border: none; } }
+    .slide-wrap #slider1_container .slides {
       border-radius: 10px; }
-      .slide-wrap #slider1_container .slides div img {
+      .slide-wrap #slider1_container .slides div {
         border-radius: 10px; }
+        .slide-wrap #slider1_container .slides div img {
+          border-radius: 10px; }
 
 .big-pic {
   position: fixed;
@@ -153,6 +180,12 @@ html {
     background-size: 100% 100%;
     width: 50px;
     height: 50px; }
+
+.disappear {
+  display: block; }
+  @media screen and (max-width: 600px) {
+    .disappear {
+      display: none; } }
 
 @keyframes Zoom {
   0% {

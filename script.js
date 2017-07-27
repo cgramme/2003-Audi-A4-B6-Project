@@ -57,8 +57,11 @@ function resizeWindow(){
         $('.slides, .slide-wrap, #slider1_container').width(width-20).height(width/1.5);
     }else{
         $('.top-pic').width(800).height(450).css({'margin':'30px auto'});
-        $('.slide-wrap, #slider1_container, .slides').width(800).height(600);
+        $('#slider1_container, .slides').width(800).height(600);
+        $('.slide-wrap').css({'width':'100%'}).height(600);
     }
+
+    
 
     if(width < 500){
         $('.left-pic, .right-pic').width(width-20).height(width/1.3).css({'margin-left':'0px'});
