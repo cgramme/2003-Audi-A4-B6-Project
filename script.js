@@ -1,3 +1,8 @@
+$(window).on('load', function () {
+    resizeWindow();
+    $('.page-wrap').addClass('fade-in');
+});
+
 $(document).ready(function(){
     resizeWindow();
 
@@ -65,7 +70,7 @@ function resizeWindow(){
 
     if(width < 500){
         $('.left-pic, .right-pic').width(width-20).height(width/1.3).css({'margin-left':'0px'});
-        $('.pic-wrap').width(width-15).height(width/1.07).css({'margin-left':'0px'});
+        $('.pic-wrap').width(width-15).height(width/1.07).css({'margin':'5px auto'});
         $('.main-pic').width(width-20).height(width/1.5);
         $('.small-pic').width(width/3-12).height(width/4);
     }else{
