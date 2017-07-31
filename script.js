@@ -1,6 +1,8 @@
 $(window).on('load', function () {
     resizeWindow();
     $('.page-wrap').addClass('fade-in');
+    //start slideshow
+    var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 });
 
 $(document).ready(function(){
@@ -23,8 +25,6 @@ $(document).ready(function(){
                     $ShowLink: true
                 }
         };
-        //start slideshow
-        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 
 
         function getPic(){
@@ -65,8 +65,6 @@ function resizeWindow(){
         $('#slider1_container, .slides').width(800).height(600);
         $('.slide-wrap').css({'width':'100%'}).height(600);
     }
-
-    
 
     if(width < 500){
         $('.left-pic, .right-pic').width(width-20).height(width/1.3).css({'margin-left':'0px'});
