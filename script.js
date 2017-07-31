@@ -1,12 +1,12 @@
 $(window).on('load', function () {
     resizeWindow();
-    $('.page-wrap').addClass('fade-in');
     //start slideshow
     var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 });
 
 $(document).ready(function(){
     resizeWindow();
+    $('.page-wrap').addClass('fade-in');
 
     $('.top-pic').on('click', function(){alert($('html').width());});
       //slideshow
