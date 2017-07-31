@@ -1,14 +1,12 @@
 $(window).on('load', function () {
     resizeWindow();
-    //start slideshow
-    var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    $('.page-wrap').addClass('fade-in');
 });
 
 $(document).ready(function(){
     resizeWindow();
-    $('.page-wrap').addClass('fade-in');
 
-    $('.top-pic').on('click', function(){alert($('html').width());});
+    //$('.top-pic').on('click', function(){alert($('html').width());});
       //slideshow
 	  var _SlideshowTransitions = [
             //Custom slide show transitions. You can add as many as you like. Will start from top first.
@@ -25,6 +23,8 @@ $(document).ready(function(){
                     $ShowLink: true
                 }
         };
+        //start slideshow
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 
 
         function getPic(){
