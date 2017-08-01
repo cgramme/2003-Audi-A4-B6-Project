@@ -1,4 +1,5 @@
 $(window).on('load', function () {
+    $('.left-pic, .right-pic').show();
     resizeWindow();
     $('.page-wrap').addClass('fade-in');
 });

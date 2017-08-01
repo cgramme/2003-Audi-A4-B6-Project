@@ -131,7 +131,7 @@ html {
 	.main-text{
 		margin-top: 10px;
 		p{
-			color: #fff;
+			color: #ccc;
 			text-shadow: 1px 1px 1px #000;
 			font-size: 20px;
 			font-family: "Open Sans";
@@ -145,9 +145,10 @@ html {
 		  	}
 
 		  	span{
+		  		color: #fff;
 		  		font-size: 58px;
 		  		height: 50px;
-		  		margin-top: -16px;
+		  		margin-top: -15px;
 		  		font-family: "Open Sans Condensed";
 			  	@media screen and (max-width: 800px) {
 			  		font-size: 50px;
@@ -158,6 +159,7 @@ html {
 	}
 
 	.left-pic{
+		display: none;
 		float: left;
 		width: 300px;
 		height: 230px;
@@ -174,6 +176,7 @@ html {
 	}
 
 	.right-pic{
+		display: none;
 		float: right;
 		width: 300px;
 		height: 230px;
