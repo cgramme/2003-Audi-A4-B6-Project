@@ -110,7 +110,8 @@ html {
   .main-content .main-text {
     margin-top: 10px; }
     .main-content .main-text p {
-      color: #ccc;
+      text-align: justify;
+      color: #fff;
       text-shadow: 1px 1px 1px #000;
       font-size: 20px;
       font-family: "Open Sans";
@@ -123,7 +124,6 @@ html {
         .main-content .main-text p {
           font-size: 16px; } }
       .main-content .main-text p span {
-        color: #fff;
         font-size: 58px;
         height: 50px;
         margin-top: -15px;
@@ -133,14 +133,13 @@ html {
             font-size: 50px;
             margin-top: -15px; } }
   .main-content .left-pic {
-    display: none;
     float: left;
     width: 300px;
     height: 230px;
     border-radius: 5px;
     border: 1px solid #333;
     margin: 5px;
-    box-shadow: 1px 1px 5px #000;
+    box-shadow: 1px 1px 5px 1px #000;
     cursor: pointer; }
     @media screen and (max-width: 500px) {
       .main-content .left-pic {
@@ -148,14 +147,13 @@ html {
         margin: 5px auto;
         border: none; } }
   .main-content .right-pic {
-    display: none;
     float: right;
     width: 300px;
     height: 230px;
     border-radius: 5px;
     border: 1px solid #333;
     margin: 5px;
-    box-shadow: 1px 1px 5px #000;
+    box-shadow: 1px 1px 5px 1px #000;
     cursor: pointer; }
     @media screen and (max-width: 500px) {
       .main-content .right-pic {
