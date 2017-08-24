@@ -1,0 +1,53 @@
+img.fixed-background-img {
+  background: url(images/farm22.jpg) center center;
+  background-size: 100% auto;
+  top: 0;
+  left: 0; }
+  @media screen and (max-width: 1250px) {
+    img.fixed-background-img {
+      margin-top: 110px; } }
+  @media screen and (max-width: 600px) {
+    img.fixed-background-img {
+      margin-top: 80px; } }
+
+.main-content {
+  width: 100%; }
+  .main-content .nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 5px; }
+    .main-content .nav li {
+      cursor: pointer;
+      width: 24%;
+      height: 90px;
+      background: #fff;
+      display: inline-block; }
+      .main-content .nav li:hover {
+        background: #eee; }
+      @media screen and (max-width: 800px) {
+        .main-content .nav li {
+          width: 45%;
+          height: 100px; } }
+      .main-content .nav li p {
+        margin-top: 15px;
+        font-size: 40px;
+        color: #444;
+        font-family: "Open Sans Condensed"; }
+        @media screen and (max-width: 600px) {
+          .main-content .nav li p {
+            font-size: 30px;
+            padding-top: 13px; } }
+
+.footer {
+  width: 100%;
+  height: 40px;
+  background: #222;
+  text-align: center; }
+  .footer p {
+    font-family: "Open Sans";
+    color: #fff;
+    font-size: 12px;
+    padding-top: 10px; }
+
+/*# sourceMappingURL=home.css.map */
