@@ -33,6 +33,7 @@ img.fixed-background-img {
       .main-content h2 {
         font-size: 30px; } }
   .main-content .main-text {
+    text-align: center;
     margin-top: 10px; }
     .main-content .main-text p {
       text-align: justify;
@@ -57,6 +58,11 @@ img.fixed-background-img {
           .main-content .main-text p span {
             font-size: 50px;
             margin-top: -15px; } }
+    .main-content .main-text a {
+      display: block;
+      color: #0043af;
+      font-size: 30px;
+      font-family: "Open Sans"; }
   .main-content .left-pic {
     float: left;
     width: 300px;
@@ -83,33 +89,6 @@ img.fixed-background-img {
         float: none;
         margin: 5px auto;
         border: none; } }
-
-.slide-wrap {
-  position: relative;
-  margin: 10px auto;
-  width: 100%;
-  height: 600px;
-  padding: 10px 0;
-  border-radius: 2px; }
-  @media screen and (max-width: 850px) {
-    .slide-wrap {
-      border: none;
-      background: none;
-      box-shadow: none;
-      padding: 0; } }
-  .slide-wrap #slider1_container {
-    border-radius: 2px;
-    position: relative;
-    margin: auto; }
-    @media screen and (max-width: 850px) {
-      .slide-wrap #slider1_container {
-        border: none; } }
-    .slide-wrap #slider1_container .slides {
-      border-radius: 2px; }
-      .slide-wrap #slider1_container .slides div {
-        border-radius: 2px; }
-        .slide-wrap #slider1_container .slides div img {
-          border-radius: 2px; }
 
 .big-pic {
   position: fixed;

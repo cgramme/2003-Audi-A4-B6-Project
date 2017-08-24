@@ -37,6 +37,7 @@ img.fixed-background-img {
 	}
 
 	.main-text{
+		text-align: center;
 		margin-top: 10px;
 		p{
 			text-align:justify;
@@ -64,6 +65,13 @@ img.fixed-background-img {
 			  		margin-top: -15px;
 			  	}
 		  	}
+		}
+		a {
+			display: block;
+			color: #0043af;
+			font-size: 30px;
+			font-family: "Open Sans";
+
 		}
 	}
 
@@ -100,39 +108,7 @@ img.fixed-background-img {
 
 }
 
-.slide-wrap {
-	position: relative;
-	//background: #444;
-	margin: 10px auto;
-	width: 100%;
-	height: 600px;
-	padding: 10px 0;
-	border-radius: 2px;
-	@media screen and (max-width: 850px) {
-    	border: none;
-    	background: none;
-    	box-shadow: none;
-    	padding: 0;
 
-  	}
-	#slider1_container {
-		border-radius: 2px;
-		position: relative;
-		margin: auto;
-		@media screen and (max-width: 850px) {
-	    	border: none;
-	  	}
-    	.slides {
-			border-radius: 2px;
-    		div{
-				border-radius: 2px;
-    			img{
-    				border-radius: 2px;
-    			}
-    		}
-    	}
-	}
-}
 
 .big-pic{
 	position: fixed;
