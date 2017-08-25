@@ -82,4 +82,55 @@ html {
 .left {
   float: left; }
 
+.menu {
+  list-style: none;
+  position: fixed;
+  top: -25px;
+  right: 2px;
+  perspective: 500px; }
+  .menu li {
+    border-radius: 0 0 0 2px;
+    text-align: center;
+    display: inline-block;
+    width: 130px;
+    height: 60px;
+    margin: 0 -2px;
+    background: linear-gradient(#1d4a7c, #3683db 60%);
+    box-shadow: 0px 0px 4px #444;
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+    -webkit-transition: height 4s;
+    /* Safari */
+    transition: transform 0.2s, box-shadow; }
+    @media screen and (max-width: 600px) {
+      .menu li {
+        width: 75px;
+        height: 45px; } }
+    .menu li:hover {
+      box-shadow: 0px 0px 7px #444;
+      transform: translate(-5px, 3px) scale(1.05);
+      z-index: 10;
+      cursor: pointer; }
+    .menu li p {
+      margin-top: 22px;
+      font-family: "Open Sans Condensed";
+      font-size: 26px;
+      color: #fff; }
+      @media screen and (max-width: 600px) {
+        .menu li p {
+          font-size: 16px; } }
+
+.list-in {
+  opacity: 1; }
+
+@keyframes fallIn {
+  0% {
+    transform: rotateY(0deg) rotateX(-90deg) scale(1) translateX(200px) translateY(0px); }
+  100% {
+    transform: rotateY(0deg) rotateX(0deg) scale(1) translateX(0px) translateY(0px); } }
+.fall-in {
+  -webkit-animation: fallIn 1s forwards;
+  animation: fallIn 1s forwards; }
+
 /*# sourceMappingURL=main.css.map */
