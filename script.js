@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 function resizeWindow() {
     var width = $(window).width();
-    $('.fixed-background-img').width(width).height(width / 1.7).css({'top': '-200px'});
+    $('.fixed-background-img').width(width).height(width / 1.8).css({'top': '-200px'});
     
 
     if (width < 850) {

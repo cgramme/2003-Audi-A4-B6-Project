@@ -1,0 +1,202 @@
+img.fixed-background-img {
+  background: url(images/audiDriving.jpg) center center;
+  background-size: 100% auto;
+  top: 0;
+  left: 0; }
+  @media screen and (max-width: 1250px) {
+    img.fixed-background-img {
+      margin-top: 110px; } }
+  @media screen and (max-width: 800px) {
+    img.fixed-background-img {
+      background: url(images/audiDriving.jpg) center center;
+      background-size: 100% auto; } }
+  @media screen and (max-width: 600px) {
+    img.fixed-background-img {
+      margin-top: 80px; } }
+
+.main-content {
+  width: 80%;
+  margin: auto; }
+  @media screen and (max-width: 800px) {
+    .main-content {
+      width: 100%; } }
+  @media screen and (max-width: 600px) {
+    .main-content {
+      margin-top: 0; } }
+  .main-content h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 0;
+    font-family: "Open Sans Condensed";
+    color: #444; }
+    @media screen and (max-width: 600px) {
+      .main-content h2 {
+        font-size: 30px; } }
+  .main-content .main-text {
+    text-align: center;
+    margin-top: 10px; }
+    .main-content .main-text p {
+      text-align: justify;
+      color: #444;
+      font-size: 20px;
+      font-family: "Open Sans";
+      width: 100%;
+      margin: auto; }
+      @media screen and (max-width: 1000px) {
+        .main-content .main-text p {
+          width: 95%; } }
+      @media screen and (max-width: 800px) {
+        .main-content .main-text p {
+          font-size: 16px; } }
+      .main-content .main-text p span {
+        color: #333;
+        font-size: 58px;
+        height: 50px;
+        margin-top: -15px;
+        font-family: "Open Sans Condensed"; }
+        @media screen and (max-width: 800px) {
+          .main-content .main-text p span {
+            font-size: 50px;
+            margin-top: -15px; } }
+    .main-content .main-text ul.mod-list {
+      list-style: none; }
+      .main-content .main-text ul.mod-list li {
+        font-family: "Open Sans Condensed";
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        font-size: 28px;
+        color: #444; }
+        @media screen and (max-width: 800px) {
+          .main-content .main-text ul.mod-list li {
+            font-size: 20px; } }
+      .main-content .main-text ul.mod-list li.coming-soon {
+        color: #222;
+        font-style: italic; }
+  .main-content .left-pic {
+    float: left;
+    width: 300px;
+    height: 230px;
+    border-radius: 2px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px #333;
+    cursor: pointer; }
+    @media screen and (max-width: 500px) {
+      .main-content .left-pic {
+        float: none;
+        margin: 5px auto;
+        border: none; } }
+  .main-content .right-pic {
+    float: right;
+    width: 300px;
+    height: 230px;
+    border-radius: 2px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px #333;
+    cursor: pointer; }
+    @media screen and (max-width: 500px) {
+      .main-content .right-pic {
+        float: none;
+        margin: 5px auto;
+        border: none; } }
+
+.big-pic {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  margin-left: -400px;
+  width: 800px;
+  height: 600px;
+  opacity: 0;
+  background-size: 100% 100%;
+  cursor: pointer;
+  border-radius: 2px;
+  transform: scale(0); }
+  .big-pic .x {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(images/x.png);
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px; }
+
+.disappear {
+  display: block; }
+  @media screen and (max-width: 500px) {
+    .disappear {
+      display: none; } }
+
+@keyframes Zoom {
+  0% {
+    transform: scale(0);
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+@keyframes ZoomOut {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(0);
+    opacity: 0; } }
+.zoom-in {
+  -webkit-animation: Zoom 0.8s forwards;
+  /* Safari 4+ */
+  -moz-animation: Zoom 0.8s forwards;
+  /* Fx 5+ */
+  -o-animation: Zoom 0.8s forwards;
+  /* Opera 12+ */
+  animation: Zoom 0.8s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+.zoom-out {
+  -webkit-animation: ZoomOut 0.8s forwards;
+  /* Safari 4+ */
+  -moz-animation: ZoomOut 0.8s forwards;
+  /* Fx 5+ */
+  -o-animation: ZoomOut 0.8s forwards;
+  /* Opera 12+ */
+  animation: ZoomOut 0.8s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+.pic-wrap {
+  width: 305px;
+  height: 318px;
+  text-align: center;
+  margin: 5px;
+  float: right; }
+  @media screen and (max-width: 500px) {
+    .pic-wrap {
+      float: none;
+      margin: 5px auto;
+      border: none; } }
+  .pic-wrap .main-pic {
+    width: 300px;
+    height: 230px;
+    background-size: 100% 100%;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #333;
+    cursor: pointer; }
+    @media screen and (max-width: 500px) {
+      .pic-wrap .main-pic {
+        margin: 5px auto;
+        border: none; } }
+  .pic-wrap .small-pic {
+    display: inline-block;
+    width: 95px;
+    height: 80px;
+    background-size: 100% 100%;
+    margin: 2px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #333;
+    cursor: pointer; }
+
+.line {
+  width: 75%;
+  height: 2px;
+  background: #ddd;
+  margin: 10px auto; }
+
+/*# sourceMappingURL=about.css.map */
