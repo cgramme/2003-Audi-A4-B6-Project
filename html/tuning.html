@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2003 A4 B6 Project</title>
+		<link rel='stylesheet' href='../css/main.css' media="screen">
+		<link rel='stylesheet' href='../css/tuning.css' media="screen">
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400|Open+Sans+Condensed:300,700' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+	</head>
+	<body>
+		<div class="page-wrap">
+		<img class="fixed-background-img"/>
+			<div class="header" onclick="location.href='../index.html';">
+				<h1>DIY AUDI</h1>
+				<h2>2003 A4 1.8T Quattro Tiptronic</h2>
+			</div>
+				
+				<div class="main-content">
+					<h2>ME7 ECM Tuning</h2>
+					<div class="main-text">
+						<p><span class="left">INTRO:</span>This is a short and sweet overview of how I got into ECM (Electronic Control Module) tuning for the A4 B6. Without the right resources I would be dead in the water had I undertaken this challenge. The crew at nefmoto.com have put together some awesome guides and threads on their forum and I would recomend starting there. While learning there also read through S4wiki.com... maybe a few times.<br><br></p>
+						<a class="resource-link" href="http://nefmoto.com/forum/">nefmoto.com</a>
+						<a class="resource-link" href="https://s4wiki.com/wiki/Tuning">s4wiki.com</a>
+						<p><br><br>Tuning is all about manipulating your current hardware via software in the most effective way for your goals. Not everyone has the same goals for their tune. While some (most of us car enthusiast) want maximum performance others want better gas mileage and less polution. However, this is not about MPG or emissions, it is about learning the limitations of your hardware and defining a safe/reliable tune that kicks you in the pants.<br><br></p>
+						<div class="line"></div>
+						<p><br><span class="left">TUNE:</span>I will start with my current hardware situation. I've upgraded to 630cc EV14 fuel injectors, short ram intake with heat sheild and front mount intercooler. This is a stage 1+ tune as the guys at nefmoto like to call it. I am replacing my exhaust with a custom setup when I do the T3/T4 turbo swap in a couple months. I have also deleted and coded out a lot of emissions components and relays such as: catalytic converter, SAI, N249, N112, N80 and P299. The goal of deleting these was to remove vacuum hoses and creating more usable space under the hood, along with simplifying the system. Tuning has allowed me to remove all these components and still pass emissions with flying colors.<br><br></p>
+						<p><br>I won't go into detail about how to tune the maps myself, instead I'll direct you to the pros at nefmoto.com and advise that you keep reading about how all the systems work. Although, a few maps to mention looking into are LAMFA (air fuel ratio), LDRXN (Load), KFZW (timing) and KFLDHBN (max boost pressure ratio). It is very important to make sure your fueling is correct before making changes to anything. Learn to log with ME7Logger and make changes to your tune with the information you saved, this is a must for any decent tune.<br><br></p>
+						<p><br>As of now I have the boost pressure pretty much maxed for the turbo at 16psi and it tapers down to 10psi at redline. Timing has been inceased up to 6 degrees in some areas with the help of using 93 octane fuel and a front mount intercooler. I've also increased the wastegate prediction map (KFLDIMX), Flattened my air intake temperature via (KFTARX) and tuned my larger fuel injectors via (TVUB) &amp; (KRKTE). I've made a lot of other changes but I feel these are some of the most important to my tune. You will learn a lot if you just hunker down do your research and take your time with your tune.<br><br></p>
+					</div>
+				</div>
+			</div>
+		<div class="big-pic"><div class="x"></div></div>
+		<ul class="menu">
+			<li onclick="location.href='about.html';" id="menuItem"><p class="unselectable">About</p></li>
+			<li onclick="location.href='mods.html';" id="menuItem"><p class="unselectable">Mods</p></li>
+			<li onclick="location.href='tuning.html';" id="menuItem"><p class="unselectable">Tuning</p></li>
+			<li onclick="location.href='intercooler.html';" id="menuItem"><p class="unselectable">Intercooler</p></li>
+		</ul>
+		<div class="footer" onclick="location.href='http://www.cardomain.com/member/silverslider/';">
+			<p>Click to see more of my previous project cars</p>
+		</div>
+		<script src="../script/jquery-3.2.1.min.js" type='text/javascript'></script>
+		<script src='../script/script.js' type='text/javascript'></script>
+	</body>
+</html>
