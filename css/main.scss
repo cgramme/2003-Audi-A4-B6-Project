@@ -1,0 +1,186 @@
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+html {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+@keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.fade-in {
+    -webkit-animation: FadeIn 1s forwards; /* Safari 4+ */
+    -moz-animation:    FadeIn 1s forwards; /* Fx 5+ */
+    -o-animation:      FadeIn 1s forwards; /* Opera 12+ */
+    animation:         FadeIn 1s forwards; /* IE 10+, Fx 29+ */
+}
+
+.page-wrap{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	//background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+
+	@media screen and (max-width: 1000px) {
+    	width: 100%;
+    	margin-left: 0;
+  	}
+}
+
+
+
+.header{
+	cursor: default;
+	position: absolute;
+	text-align: center;
+	top: -15px;
+	width: 100%;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 0 2px #222;
+	@media screen and (max-width: 1250px) {
+  	}
+
+	h1{
+		font-size: 90px;
+		font-family: "Open Sans Condensed";
+		color: #555;
+		margin-bottom: -30px;
+		//text-shadow: 1px 1px 5px #000;
+		@media screen and (max-width: 600px) {
+			margin-bottom: -20px;
+	    	font-size: 70px;
+	  	}
+	}
+	h2 {
+		font-size: 25px;
+		font-family: "Open Sans Condensed";
+		color: #888;
+		padding-bottom: 5px;
+		@media screen and (max-width: 600px) {
+	    	font-size: 19px;
+	  	}
+	}
+
+}
+.footer {
+	cursor: pointer;
+	width: 100%;
+	height: 40px;
+	background: #222;
+	text-align: center;
+	p{
+		font-family: "Open Sans";
+		color: #fff;
+		font-size: 12px;
+		padding-top: 10px;
+	}
+}
+
+
+
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}
+
+.menu {
+	list-style: none;	
+	position: fixed;
+	top: -25px;
+	right: 2px;
+	perspective: 500px;
+
+
+	li {
+		border-radius: 0 0 0 2px;
+		text-align: center;
+		display: inline-block;
+		width: 130px;
+		height: 60px;
+		margin: 0 -2px;
+		background: linear-gradient(#1d4a7c, #3683db 60%);
+		box-shadow: 0px 0px 4px #444;
+		opacity: 0;
+		z-index: 1;
+		position: relative;
+		-webkit-transition: height 4s; /* Safari */
+    	transition: transform 0.2s, box-shadow;
+
+    	@media screen and (max-width: 600px) {
+	    	width: 75px;
+	    	height: 50px;
+	  	}
+	  	@media screen and (max-width: 380px) {
+	    	width: 60px;
+	    	height: 50px;
+	  	}
+
+		&:hover {
+			box-shadow: 0px 0px 7px #444;
+			transform: translate(-5px , 3px) scale(1.05);
+			z-index: 10;
+			cursor: pointer;
+		}
+
+	    
+
+		p {
+			margin-top: 22px;
+			font-family: "Open Sans Condensed";
+			font-size: 26px;
+			color: #fff;
+
+			@media screen and (max-width: 600px) {
+	    		font-size: 16px;
+				margin-top: 24px;
+	  		}
+		}
+	}
+}
+.list-in {
+	opacity: 1;
+
+}
+
+@keyframes fallIn {
+    0%{
+    	transform: rotateY(-90deg) rotateX(-90deg) scale(1) translateX(100px) translateY(-100px);
+    }
+    100%{
+    	transform: rotateY(0deg) rotateX(0deg) scale(1) translateX(0px) translateY(0px);
+    }
+}
+//Be sure to set the animation property with the correct prefix's for optimal browser support.
+.fall-in {
+    -webkit-animation: fallIn 0.7s forwards;
+    animation: fallIn 0.7s forwards;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
