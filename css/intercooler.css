@@ -32,6 +32,30 @@ img.fixed-background-img {
     @media screen and (max-width: 600px) {
       .main-content h2 {
         font-size: 30px; } }
+  .main-content .intercooler-list {
+    font-family: "Open Sans Condensed";
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+    list-style: none; }
+    .main-content .intercooler-list li {
+      box-shadow: 1px 1px 5px #222;
+      margin: 0 5px;
+      display: inline-block;
+      font-family: "Open Sans Condensed";
+      width: 150px;
+      height: 150px;
+      border-radius: 2px;
+      background: linear-gradient(155deg, #1d4a7c, #3683db);
+      cursor: pointer;
+      transition: transform 0.5s, box-shadow 0.5s; }
+      .main-content .intercooler-list li:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 1px 15px #222; }
+    .main-content .intercooler-list p {
+      margin-top: 50px;
+      color: #fff;
+      font-size: 35px; }
   .main-content .main-text {
     margin-top: 10px; }
     .main-content .main-text p {
@@ -205,10 +229,25 @@ img.fixed-background-img {
     box-shadow: 1px 1px 2px #333;
     cursor: pointer; }
 
-.line {
+.line1 {
   width: 75%;
   height: 2px;
   background: #ddd;
-  margin: 10px auto; }
+  margin: 50px auto 50px auto; }
+
+.line2 {
+  width: 75%;
+  height: 2px;
+  background: #ddd;
+  margin: 50px auto 50px auto; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fade-in {
+  -webkit-animation: fadeIn 0.7s forwards;
+  animation: fadeIn 0.7s forwards; }
 
 /*# sourceMappingURL=intercooler.css.map */

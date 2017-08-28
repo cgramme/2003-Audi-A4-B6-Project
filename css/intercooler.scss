@@ -36,6 +36,37 @@ img.fixed-background-img {
 	  	}
 	}
 
+	.intercooler-list {
+		font-family: "Open Sans Condensed";
+		width: 100%;
+		text-align: center;
+		margin: 50px 0;
+		list-style: none;
+		li {
+			box-shadow: 1px 1px 5px #222;
+			margin: 0 5px;
+			display: inline-block;
+			font-family: "Open Sans Condensed";
+			width: 150px;
+			height: 150px;
+			border-radius: 2px;
+			background: linear-gradient(155deg, #1d4a7c, #3683db);
+			cursor: pointer;
+			transition: transform 0.5s, box-shadow 0.5s;
+
+			&:hover {
+				transform: scale(1.05);
+				box-shadow: 1px 1px 15px #222;
+			}
+
+		}
+		p{
+			margin-top: 50px;
+			color: #fff;
+			font-size: 35px;
+		}
+	}
+
 	.main-text{
 		margin-top: 10px;
 		p{
@@ -244,9 +275,29 @@ img.fixed-background-img {
 
 }
 
-.line {
+.line1 {
 	width: 75%;
 	height: 2px;
 	background: #ddd;
-	margin: 10px auto;
+	margin: 50px auto 50px auto;
+}
+.line2 {
+	width: 75%;
+	height: 2px;
+	background: #ddd;
+	margin: 50px auto 50px auto;
+}
+
+@keyframes fadeIn {
+    0%{
+    	opacity: 0;
+    }
+    100%{
+    	opacity: 1;
+    }
+}
+//Be sure to set the animation property with the correct prefix's for optimal browser support.
+.fade-in {
+    -webkit-animation: fadeIn 0.7s forwards;
+    animation: fadeIn 0.7s forwards;
 }
