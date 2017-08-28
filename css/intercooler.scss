@@ -296,8 +296,21 @@ img.fixed-background-img {
     	opacity: 1;
     }
 }
-//Be sure to set the animation property with the correct prefix's for optimal browser support.
+
 .fade-in {
-    -webkit-animation: fadeIn 0.7s forwards;
-    animation: fadeIn 0.7s forwards;
+    -webkit-animation: fadeIn 0.5s forwards;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    0%{
+    	opacity: 1;
+    }
+    100%{
+    	opacity: 0;
+    }
+}
+.fade-out {
+	-webkit-animation: fadeOut 0.5s forwards;
+    animation: fadeOut 0.5s forwards;
 }
