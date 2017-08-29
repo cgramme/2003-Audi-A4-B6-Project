@@ -22,7 +22,7 @@ $(document).ready(function() {
     $('.big-pic').on('click', function() {
         $('.big-pic').addClass('zoom-out');
     });
-    $('.pic-wrap').on('mouseover',function() {
+    $('.main-text').on('mouseover',function() {
         var image2 = $(this).attr('src');
         $('.main-pic').attr('src', image2);
     });
