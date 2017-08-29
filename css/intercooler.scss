@@ -169,10 +169,9 @@ img.fixed-background-img {
 		margin: 5px;
 		box-shadow: 1px 1px 2px #333;
 		cursor: pointer;
+		display: inline-block;
 		@media screen and (max-width: 500px) {
-	    	float: none;
-	    	margin: 5px auto;
-	    	border: none;
+	    	display: none;
 	  	}
 	}
 
@@ -184,11 +183,21 @@ img.fixed-background-img {
 		margin: 5px;
 		box-shadow: 1px 1px 2px #333;
 		cursor: pointer;
+		display: inline-block;
+		@media screen and (max-width: 500px) {
+	    	display: none;
+	  	}
+	}
+	.response-pic {
+		@extend .right-pic;
+		display: none;
 		@media screen and (max-width: 500px) {
 	    	float: none;
 	    	margin: 5px auto;
 	    	border: none;
+	    	display: inline-block;
 	  	}
+
 	}
 
 
@@ -299,18 +308,14 @@ img.fixed-background-img {
   }
 
 .pic-wrap{
-	background: #fff;
 	width: 305px;
 	height: 318px;
 	text-align: center;
 	margin: 5px;
 	float: right;
-	@media screen and (max-width: 800px) {
-  	}
+	display: block;
 	@media screen and (max-width: 500px) {
-    	float: none;
-    	margin: 5px auto;
-    	border: none;
+    	display: none;
   	}
 	
 	.main-pic{
@@ -337,6 +342,15 @@ img.fixed-background-img {
 		cursor: pointer;
 	}
 
+}
+
+.response-pic-multi {
+	@extend .pic-wrap;
+	display: none;
+	@media screen and (max-width: 500px) {
+		display: block;
+		float: none;
+  	}
 }
 
 .line {

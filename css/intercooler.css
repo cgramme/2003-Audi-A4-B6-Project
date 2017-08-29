@@ -147,25 +147,31 @@ img.fixed-background-img {
     border-radius: 2px;
     margin: 5px;
     box-shadow: 1px 1px 2px #333;
-    cursor: pointer; }
+    cursor: pointer;
+    display: inline-block; }
     @media screen and (max-width: 500px) {
       .main-content .left-pic {
-        float: none;
-        margin: 5px auto;
-        border: none; } }
-  .main-content .right-pic {
+        display: none; } }
+  .main-content .right-pic, .main-content .response-pic {
     float: right;
     width: 300px;
     height: 230px;
     border-radius: 2px;
     margin: 5px;
     box-shadow: 1px 1px 2px #333;
-    cursor: pointer; }
+    cursor: pointer;
+    display: inline-block; }
     @media screen and (max-width: 500px) {
-      .main-content .right-pic {
+      .main-content .right-pic, .main-content .response-pic {
+        display: none; } }
+  .main-content .response-pic {
+    display: none; }
+    @media screen and (max-width: 500px) {
+      .main-content .response-pic {
         float: none;
         margin: 5px auto;
-        border: none; } }
+        border: none;
+        display: inline-block; } }
 
 .big-pic {
   z-index: 11;
@@ -256,19 +262,17 @@ img.fixed-background-img {
   animation: ZoomOut 0.8s forwards;
   /* IE 10+, Fx 29+ */ }
 
-.pic-wrap {
-  background: #fff;
+.pic-wrap, .response-pic-multi {
   width: 305px;
   height: 318px;
   text-align: center;
   margin: 5px;
-  float: right; }
+  float: right;
+  display: block; }
   @media screen and (max-width: 500px) {
-    .pic-wrap {
-      float: none;
-      margin: 5px auto;
-      border: none; } }
-  .pic-wrap .main-pic {
+    .pic-wrap, .response-pic-multi {
+      display: none; } }
+  .pic-wrap .main-pic, .response-pic-multi .main-pic {
     width: 300px;
     height: 230px;
     background-size: 100% 100%;
@@ -276,10 +280,10 @@ img.fixed-background-img {
     box-shadow: 1px 1px 2px #333;
     cursor: pointer; }
     @media screen and (max-width: 500px) {
-      .pic-wrap .main-pic {
+      .pic-wrap .main-pic, .response-pic-multi .main-pic {
         margin: 5px auto;
         border: none; } }
-  .pic-wrap .small-pic {
+  .pic-wrap .small-pic, .response-pic-multi .small-pic {
     display: inline-block;
     width: 95px;
     height: 80px;
@@ -288,6 +292,13 @@ img.fixed-background-img {
     border-radius: 2px;
     box-shadow: 1px 1px 2px #333;
     cursor: pointer; }
+
+.response-pic-multi {
+  display: none; }
+  @media screen and (max-width: 500px) {
+    .response-pic-multi {
+      display: block;
+      float: none; } }
 
 .line {
   width: 75%;
