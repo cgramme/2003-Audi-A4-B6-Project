@@ -9,7 +9,7 @@ $(document).ready(function() {
         var image = $(this).css('background');
         alert(image);
     };
-    $('.right-pic, .left-pic, .main-pic, .small-pic').on('click', function() {
+    $('.main-text').on('click','.right-pic, .left-pic, .main-pic, .small-pic', function() {
         var width3 = $(window).width();
         var image = $(this).attr('src');
         if (width3 >= 800) {
@@ -22,7 +22,7 @@ $(document).ready(function() {
     $('.big-pic').on('click', function() {
         $('.big-pic').addClass('zoom-out');
     });
-    $('.small-pic').mouseover(function() {
+    $('.pic-wrap').on('mouseover',function() {
         var image2 = $(this).attr('src');
         $('.main-pic').attr('src', image2);
     });

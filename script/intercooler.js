@@ -11,7 +11,8 @@ $(document).ready(function() {
 
             $(".main-text").addClass('fade-out').delay(500).queue(function(next){
 	            $(".main-text").html(result).removeClass('fade-out').addClass('fade-in');
-	            $('.main-text').load('.main-text');
+	            resizeWindow();
+
 	            next();
 
         	});
@@ -19,5 +20,6 @@ $(document).ready(function() {
 
 		//$(this).addClass('fade-in');
 	});
+
 
 });
