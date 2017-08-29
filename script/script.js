@@ -84,17 +84,17 @@ function resizeWindow() {
         $('.slide-wrap').css({'width': '100%'}).height(600);
     }
     if (width < 510) {
-        $('.left-pic, .right-pic').width(width - 20).height(width / 1.3).css({'margin-left': '0px'});
-        $('.pic-wrap').width(width - 15).height(width / 1.07).css({
+        $('.response-pic').width(width - 20).height(width / 1.3).css({'margin-left': '0px'});
+        $('.pic-wrap, .response-pic-multi').width(width - 15).height(width / 1.07).css({
             'margin': '5px auto'
         });
         $('.main-pic').width(width - 20).height(width / 1.5);
         $('.small-pic').width(width / 3 - 12).height(width / 4);
     } else {
-        $('.left-pic, .right-pic').width(300).height(230).css({
+        $('.response-pic').width(300).height(230).css({
             'margin': '5px'
         });
-        $('.pic-wrap').width(305).height(318).css({
+        $('.pic-wrap, .response-pic-multi').width(305).height(318).css({
             'margin': '30px 5px 2px 5px'
         });
         $('.main-pic').width(300).height(230);
