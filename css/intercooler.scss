@@ -42,6 +42,13 @@ img.fixed-background-img {
 		text-align: center;
 		margin: 50px 0;
 		list-style: none;
+
+		@media screen and (max-width: 1050px) {
+			margin: 20px 0;
+		}
+		@media screen and (max-width: 1050px) {
+			margin: 0;
+		}
 		li {
 			box-shadow: 1px 1px 5px #222;
 			margin: 0 5px;
@@ -54,9 +61,39 @@ img.fixed-background-img {
 			cursor: pointer;
 			transition: transform 0.5s, box-shadow 0.5s;
 
+			@media screen and (max-width: 1050px) {
+				width: 100px;
+				height: 100px;
+			}
+			@media screen and (max-width: 700px) {
+				width: 80px;
+				height: 80px;
+			}
+			@media screen and (max-width: 500px) {
+				width: 70px;
+				height: 70px;
+				margin: 0 2px;
+			}
+			@media screen and (max-width: 410px) {
+				width: 60px;
+				height: 60px;
+				margin: 0 2px;
+			}
+			@media screen and (max-width: 350px) {
+				width: 50px;
+				height: 50px;
+				margin: 0 1px;
+			}
+			@media screen and (max-width: 320px) {
+				width: 45px;
+				height: 45px;
+				margin: 0 1px;
+			}
+
 			&:hover {
 				transform: scale(1.05);
 				box-shadow: 1px 1px 15px #222;
+				background: linear-gradient(155deg, #133860, #1d4a7c);
 			}
 
 		}
@@ -64,6 +101,32 @@ img.fixed-background-img {
 			margin-top: 50px;
 			color: #fff;
 			font-size: 35px;
+
+			@media screen and (max-width: 1050px) {
+				margin-top: 32px;
+				font-size: 25px;
+			}
+			@media screen and (max-width: 700px) {
+				margin-top: 25px;
+				font-size: 22px;
+			}
+			@media screen and (max-width: 500px) {
+				margin-top: 22px;
+				font-size: 19px;
+			}
+			@media screen and (max-width: 410px) {
+				margin-top: 20px;
+				font-size: 15px;
+			}
+			@media screen and (max-width: 350px) {
+				margin-top: 15px;
+				font-size: 15px;
+			}
+			@media screen and (max-width: 320px) {
+				margin-top: 14px;
+				font-size: 14px;
+			}
+
 		}
 	}
 
@@ -236,6 +299,7 @@ img.fixed-background-img {
   }
 
 .pic-wrap{
+	background: #fff;
 	width: 305px;
 	height: 318px;
 	text-align: center;
