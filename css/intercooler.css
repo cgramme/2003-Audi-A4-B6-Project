@@ -36,7 +36,7 @@ img.fixed-background-img {
     font-family: "Open Sans Condensed";
     width: 100%;
     text-align: center;
-    margin: 50px 0;
+    margin: 30px 0;
     list-style: none; }
     @media screen and (max-width: 1050px) {
       .main-content .intercooler-list {
@@ -289,17 +289,11 @@ img.fixed-background-img {
     box-shadow: 1px 1px 2px #333;
     cursor: pointer; }
 
-.line1 {
+.line {
   width: 75%;
   height: 2px;
   background: #ddd;
-  margin: 50px auto 50px auto; }
-
-.line2 {
-  width: 75%;
-  height: 2px;
-  background: #ddd;
-  margin: 50px auto 50px auto; }
+  margin: 20px auto; }
 
 @keyframes fadeIn {
   0% {
