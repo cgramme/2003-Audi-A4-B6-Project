@@ -21,7 +21,7 @@ $(document).ready(function(){
               }
             };
 
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            //var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
             /*#region responsive code begin*/
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
                 }
             }
 
-            ScaleSlider();
+            //ScaleSlider();
 
             $(window).bind("load", ScaleSlider);
             $(window).bind("resize", ScaleSlider);
