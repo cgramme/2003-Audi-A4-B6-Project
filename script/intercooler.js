@@ -11,7 +11,7 @@ $(document).ready(function() {
 
             $(".main-text").addClass('fade-out').delay(500).queue(function(next){
 	            $(".main-text").html(result).removeClass('fade-out').addClass('fade-in');
-	            if(buttonText === "mapDiy"){
+	            if($(this).find('p').text().toLowerCase(); === "result"){
 	            	$('body').append($("<script src='../script/jssor.js' type='text/javascript'></script>"));
 	            }
 	            resizeWindow();
