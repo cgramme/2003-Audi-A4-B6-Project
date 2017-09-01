@@ -46,8 +46,7 @@ html {
   top: -15px;
   width: 100%;
   margin: auto;
-  background: #fff;
-  box-shadow: 1px 0 2px #222; }
+  background: #fff; }
   .header h1 {
     font-size: 90px;
     font-family: "Open Sans Condensed";
