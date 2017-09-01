@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	 var _SlideshowTransitions = [
-            //Fade
-            { $Duration: 1200, x: 1, $Delay: 50, $Cols: 8, $Rows: 4, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad }, $Opacity: 2 }
+   
+            {$Duration:1400,x:0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1400,x:-0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10}}
+      
             ];
 
             var jssor_1_options = {
