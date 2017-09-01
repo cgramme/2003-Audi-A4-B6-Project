@@ -100,6 +100,10 @@ function resizeWindow() {
         $('.main-pic').width(300).height(230);
         $('.small-pic').width(95).height(80);
     }
+
+    if (typeof ScaleSlider(); !== 'undefined') {
+        ScaleSlider();
+    }
 }
 $(window).resize(function() {
     resizeWindow();
