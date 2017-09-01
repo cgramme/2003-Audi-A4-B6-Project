@@ -1,9 +1,7 @@
 $(document).ready(function(){
-	 var jssor_1_SlideoTransitions = [
-
-
-   {$Duration:1400,x:0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1400,x:-0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10}}
-             
+	 var _SlideshowTransitions = [
+            //Fade
+            { $Duration: 1200, x: 1, $Delay: 50, $Cols: 8, $Rows: 4, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad }, $Opacity: 2 }
             ];
 
             var jssor_1_options = {
@@ -44,8 +42,8 @@ $(document).ready(function(){
 
             ScaleSlider();
 
-            $(window).bind("load", ScaleSlider());
-            $(window).bind("resize", ScaleSlider());
-            $(window).bind("orientationchange", ScaleSlider());
+            $(window).on("load", ScaleSlider);
+            $(window).on("resize", ScaleSlider);
+            $(window).on("orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
 });
