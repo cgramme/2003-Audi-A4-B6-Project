@@ -44,8 +44,8 @@ $(document).ready(function(){
 
             ScaleSlider();
 
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
+            $(window).bind("load", ScaleSlider());
+            $(window).bind("resize", ScaleSlider());
+            $(window).bind("orientationchange", ScaleSlider());
             /*#endregion responsive code end*/
 });
