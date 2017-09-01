@@ -8,7 +8,7 @@ $(document).ready(function(){
               $AutoPlay: 1,
               $SlideDuration: 2000,
               $CaptionSliderOptions: {
-                $Transitions: _SlideshowTransitions
+                $Transitions: jssor_1_SlideShowTransitions
               },
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
