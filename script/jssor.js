@@ -1,15 +1,15 @@
 $(document).ready(function(){
 	 
-    var jssor_1_SlideoTransitions = [
+    var jssor_1_SlideShowTransitions = [
       {$Duration:1200,$Opacity:2}
     ];
 
             var jssor_1_options = {
               $AutoPlay: 1,
-              $SlideDuration: 1000,
+              $SlideDuration: 2000,
               $CaptionSliderOptions: {
                 $Class: $JssorCaptionSlideo$,
-                $Transitions: jssor_1_SlideoTransitions
+                $Transitions: jssor_1_SlideShowTransitions
               },
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
