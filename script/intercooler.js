@@ -13,7 +13,6 @@ $(document).ready(function() {
 	            $(".main-text").html(result).removeClass('fade-out').addClass('fade-in');
 	            if(buttonText === "result"){
 	            	$('body').append($("<script src='../script/jssor.js' type='text/javascript'></script>"));
-	            	var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 	            	ScaleSlider();
 	            }
 	            resizeWindow();
