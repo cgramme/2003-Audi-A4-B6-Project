@@ -7,7 +7,7 @@ $(document).ready(function(){
             var jssor_1_options = {
               $AutoPlay: 1,
               $SlideDuration: 2000,
-              $CaptionSliderOptions: {
+              $SlideshowOptions: {
                 $Transitions: jssor_1_SlideShowTransitions
               },
               $ArrowNavigatorOptions: {
