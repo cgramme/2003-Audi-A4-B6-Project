@@ -101,7 +101,7 @@ function resizeWindow() {
         $('.small-pic').width(95).height(80);
     }
 
-    if (typeof ScaleSlider(); !== 'undefined') {
+    if (typeof ScaleSlider() !== 'undefined') {
         ScaleSlider();
     }
 }
