@@ -10,12 +10,15 @@ $(document).ready(function(){
               $SlideshowOptions: {
                 $Transitions: jssor_1_SlideShowTransitions
               },
-              $ArrowNavigatorOptions: {
+
+
+              /*$ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
               },
               $BulletNavigatorOptions: {
                 $Class: $JssorBulletNavigator$
-              }
+              }*/
+
             };
 
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
