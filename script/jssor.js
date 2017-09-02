@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	 
-    var jssor_1_SlideShowTransitions = [
+    var slideShowTransitions = [
       {$Duration:1200,$Opacity:2}
     ];
 
@@ -8,7 +8,7 @@ $(document).ready(function(){
               $AutoPlay: 1,
               $SlideDuration: 2000,
               $SlideshowOptions: {
-                $Transitions: jssor_1_SlideShowTransitions
+                $Transitions: slideShowTransitions
               },
 
 
