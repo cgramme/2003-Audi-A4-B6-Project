@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	 
     var slideShowTransitions = [
-      {$Duration:1200,$Opacity:2}
+      {$Duration:1400,x:0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1400,x:-0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10}}
     ];
 
             var jssor_1_options = {
