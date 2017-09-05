@@ -8,16 +8,17 @@ $(document).ready(function(){
               $AutoPlay: 1,
               $SlideDuration: 2000,
               $SlideshowOptions: {
+		$Class: $JssorSlideshowRunner$,
                 $Transitions: slideShowTransitions
               },
 
 
-              /*$ArrowNavigatorOptions: {
+              $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
               },
               $BulletNavigatorOptions: {
                 $Class: $JssorBulletNavigator$
-              }*/
+              }
 
             };
 
