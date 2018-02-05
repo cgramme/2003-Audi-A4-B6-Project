@@ -63,6 +63,21 @@ img.fixed-background-img {
       color: #0043af;
       font-size: 30px;
       font-family: "Open Sans"; }
+    .main-content .main-text ul.mod-list {
+      list-style: none; }
+      .main-content .main-text ul.mod-list li {
+        font-family: "Open Sans Condensed";
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        font-size: 28px;
+        color: #444; }
+        @media screen and (max-width: 800px) {
+          .main-content .main-text ul.mod-list li {
+            font-size: 20px; } }
+      .main-content .main-text ul.mod-list li.coming-soon {
+        color: #222;
+        font-style: italic; }
   .main-content .left-pic {
     float: left;
     width: 300px;

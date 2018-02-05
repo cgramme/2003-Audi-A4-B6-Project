@@ -43,7 +43,7 @@ img.fixed-background-img {
       background: #fff;
       display: inline-block; }
       .main-content .nav li:hover {
-        background: #eee; }
+        background: #e5ebff; }
       @media screen and (max-width: 800px) {
         .main-content .nav li {
           width: 45%;

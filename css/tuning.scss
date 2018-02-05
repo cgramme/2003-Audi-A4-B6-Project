@@ -73,6 +73,27 @@ img.fixed-background-img {
 			font-family: "Open Sans";
 
 		}
+
+		ul.mod-list {
+			list-style: none;
+
+			li {
+				font-family: "Open Sans Condensed";
+				font-weight: bold;
+				margin: auto;
+				text-align: center;
+				font-size: 28px;
+				color: #444;
+				@media screen and (max-width: 800px) {
+			  		font-size: 20px;
+			  	}
+
+			}
+			li.coming-soon {
+				color: #222;
+				font-style: italic;
+			}
+		}
 	}
 
 	.left-pic{
