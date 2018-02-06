@@ -84,6 +84,7 @@ html {
   float: left; }
 
 .menu {
+  clear: both;
   list-style: none;
   position: fixed;
   top: -25px;

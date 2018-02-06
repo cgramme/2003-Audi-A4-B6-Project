@@ -76,8 +76,9 @@ img.fixed-background-img {
           .main-content .main-text ul.mod-list li {
             font-size: 20px; } }
       .main-content .main-text ul.mod-list li.coming-soon {
-        color: #222;
-        font-style: italic; }
+        color: #444;
+        font-style: italic;
+        font-weight: 300; }
   .main-content .left-pic {
     float: left;
     width: 300px;
