@@ -1,6 +1,8 @@
 $(window).on('load', function() {
     resizeWindow();
     $('.page-wrap').addClass('fade-in');
+    setTimeout(function(){if(menuDisplay){menuIn($('.menu li'), 0, 200);}}, 500);
+    
 });
 $(document).ready(function() {
     resizeWindow();
@@ -31,7 +33,7 @@ $(document).ready(function() {
 
     });
     var firstOpen = 0;
-    $(window).scroll(function() {
+    /*$(window).scroll(function() {
         
         if(firstOpen===0){
             menuIn($('.menu li'), 0, 200);
@@ -39,7 +41,7 @@ $(document).ready(function() {
         }else{
 
         }
-    });
+    });*/
 });
 
 

@@ -1,14 +1,16 @@
 $(document).ready(function(){
 	 
     var slideShowTransitions = [
-      {$Duration:1400,x:0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1400,x:-0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10}}
+      {$Duration:800,$Opacity:2}
+      //{$Duration:1200,$Zoom:1,$Easing:{$Zoom:$Jease$.$InCubic,$Opacity:$Jease$.$OutQuad},$Opacity:2}
+      //{$Duration:1400,x:0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:1400,x:-0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InSine},$Opacity:2,$ZIndex:-10}}
     ];
 
             var jssor_1_options = {
               $AutoPlay: 1,
-              $SlideDuration: 2000,
+              $Idle: 7000,  //in milliseconds
               $SlideshowOptions: {
-		$Class: $JssorSlideshowRunner$,
+		          $Class: $JssorSlideshowRunner$,
                 $Transitions: slideShowTransitions
               },
 
