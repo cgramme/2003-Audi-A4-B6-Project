@@ -103,6 +103,53 @@ html {
 	float:left;
 }
 
+.home-link {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 140px;
+	height: 50px;
+	left: -100px;
+	transition: transform 0.5s;
+
+	&:hover {
+		transform: translateX(100px);
+		cursor: pointer;
+		@media screen and (max-width: 700px){
+			transform: scale(1.05);
+		}
+	}
+
+	.menu-car-pic {
+		background: url(../images/farmSuperSmall.jpg);
+		width: 100px;
+		height: 50px;
+		background-size: 100% 100%;
+		display: inline-block;
+		box-shadow: 0 0 5px #444;
+	}
+
+	.blue {
+		display: inline-block;
+		position: absolute;
+		left: 100px;
+		background: linear-gradient(#1d4a7c, #3683db 60%);
+		border-radius: 0 0 50% 0;
+		width: 50px;
+		height: 50px;
+		box-shadow: 0 0 5px #444;
+
+		.home-icon {
+			background: url(../images/home.png);
+			background-size: 100% 100%;
+			width: 35px;
+			height: 35px;
+			margin: 5px 0 0 5px;
+		}
+	}
+
+}
+
 .menu {
 	clear: both;
 	list-style: none;	
@@ -117,28 +164,28 @@ html {
 		text-align: center;
 		display: inline-block;
 		width: 130px;
-		height: 60px;
+		height: 65px;
 		margin: 0 -2px;
 		background: linear-gradient(#1d4a7c, #3683db 60%);
 		box-shadow: 0px 0px 4px #444;
 		opacity: 0;
 		z-index: 1;
 		position: relative;
-		-webkit-transition: height 4s; /* Safari */
-    	transition: transform 0.2s, box-shadow;
+		-webkit-transition: transform 0.2s; /* Safari */
+    	transition: transform 0.2s;
 
     	@media screen and (max-width: 600px) {
 	    	width: 75px;
-	    	height: 50px;
+	    	height: 60px;
 	  	}
 	  	@media screen and (max-width: 380px) {
 	    	width: 60px;
-	    	height: 50px;
 	  	}
 
 		&:hover {
 			box-shadow: 0px 0px 7px #444;
 			transform: translate(-5px , 3px) scale(1.05);
+			background: linear-gradient(155deg, #133860, #1d4a7c);
 			z-index: 10;
 			cursor: pointer;
 		}
@@ -146,14 +193,14 @@ html {
 	    
 
 		p {
-			margin-top: 22px;
+			margin-top: 25px;
 			font-family: "Open Sans Condensed";
 			font-size: 26px;
 			color: #fff;
 
 			@media screen and (max-width: 600px) {
 	    		font-size: 16px;
-				margin-top: 24px;
+				margin-top: 27px;
 	  		}
 		}
 	}
