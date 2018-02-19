@@ -1,0 +1,800 @@
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+html {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; }
+
+body {
+  opacity: 0;
+  overflow-x: hidden;
+  width: 100%; }
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fade-in {
+  -webkit-animation: FadeIn 1s forwards;
+  /* Safari 4+ */
+  -moz-animation: FadeIn 1s forwards;
+  /* Fx 5+ */
+  -o-animation: FadeIn 1s forwards;
+  /* Opera 12+ */
+  animation: FadeIn 1s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+@keyframes PopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    display: block; }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+.pop-in {
+  -webkit-animation: PopIn 1s forwards;
+  /* Safari 4+ */
+  -moz-animation: PopIn 1s forwards;
+  /* Fx 5+ */
+  -o-animation: PopIn 1s forwards;
+  /* Opera 12+ */
+  animation: PopIn 1s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+@keyframes OpacityIn {
+  0% {
+    background-color: transparent; }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5); } }
+.opacity-in {
+  -webkit-animation: OpacityIn 3s forwards;
+  /* Safari 4+ */
+  -moz-animation: OpacityIn 3s forwards;
+  /* Fx 5+ */
+  -o-animation: OpacityIn 3s forwards;
+  /* Opera 12+ */
+  animation: OpacityIn 3s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+@keyframes Flip {
+  0% {
+    transform: rotateY(0); }
+  100% {
+    transform: rotateY(180deg); } }
+.flip {
+  -webkit-animation: Flip 1s forwards;
+  /* Safari 4+ */
+  -moz-animation: Flip 1s forwards;
+  /* Fx 5+ */
+  -o-animation: Flip 1s forwards;
+  /* Opera 12+ */
+  animation: Flip 1s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+@keyframes FlipReverse {
+  0% {
+    transform: rotateY(180deg); }
+  100% {
+    transform: rotateY(0); } }
+.flip-reverse {
+  -webkit-animation: FlipReverse 1s forwards;
+  /* Safari 4+ */
+  -moz-animation: FlipReverse 1s forwards;
+  /* Fx 5+ */
+  -o-animation: FlipReverse 1s forwards;
+  /* Opera 12+ */
+  animation: FlipReverse 1s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+@keyframes DotIn {
+  0% {
+    right: -30px;
+    transform: scaleX(2) scaleY(1); }
+  35% {
+    transform: scaleX(2) scaleY(1); }
+  50% {
+    right: 270px;
+    transform: scaleX(0.5) scaleY(1.5); }
+  55% {
+    transform: scaleX(1) scaleY(1); }
+  100% {
+    right: 5px; } }
+.dot-in {
+  -webkit-animation: DotIn 1s forwards;
+  /* Safari 4+ */
+  -moz-animation: DotIn 1s forwards;
+  /* Fx 5+ */
+  -o-animation: DotIn 1s forwards;
+  /* Opera 12+ */
+  animation: DotIn 2s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+@keyframes MenuIn {
+  0% {
+    right: -300px; }
+  55% {
+    right: 10px; }
+  100% {
+    right: 10px; } }
+.menu-in {
+  -webkit-animation: MenuIn 2s forwards;
+  /* Safari 4+ */
+  -moz-animation: MenuIn 2s forwards;
+  /* Fx 5+ */
+  -o-animation: MenuIn 2s forwards;
+  /* Opera 12+ */
+  animation: MenuIn 2s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+@keyframes SnowOne {
+  0% {
+    transform: rotateX(0deg); }
+  100% {
+    transform: rotateX(360deg); } }
+.snow1 {
+  -webkit-animation: Snow 2s forwards;
+  /* Safari 4+ */
+  -moz-animation: MenuIn 2s forwards;
+  /* Fx 5+ */
+  -o-animation: MenuIn 2s forwards;
+  /* Opera 12+ */
+  animation: SnowOne 2s infinite;
+  /* IE 10+, Fx 29+ */
+  animation-timing-function: linear; }
+
+@keyframes SnowTwo {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg); }
+  100% {
+    transform: rotateY(360deg) rotateX(360deg); } }
+.snow2 {
+  -webkit-animation: Snow 2s forwards;
+  /* Safari 4+ */
+  -moz-animation: MenuIn 2s forwards;
+  /* Fx 5+ */
+  -o-animation: MenuIn 2s forwards;
+  /* Opera 12+ */
+  animation: SnowTwo 5s infinite;
+  /* IE 10+, Fx 29+ */
+  animation-timing-function: linear; }
+
+@keyframes MenuInSmall {
+  0% {
+    transform: rotateX(-120deg); }
+  20% {
+    transform: rotateX(-120deg); }
+  70% {
+    transform: rotateX(15deg); }
+  100% {
+    transform: rotateX(0deg); } }
+.menu-in-small {
+  -webkit-animation: MenuInSmall 2s forwards;
+  /* Safari 4+ */
+  -moz-animation: MenuInSmall 2s forwards;
+  /* Fx 5+ */
+  -o-animation: MenuInSmall 2s forwards;
+  /* Opera 12+ */
+  animation: MenuInSmall 1s forwards;
+  /* IE 10+, Fx 29+ */ }
+
+.menu {
+  background-color: transparent;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Open Sans Condensed";
+  -webkit-perspective: 100px;
+  /* Chrome, Safari, Opera */
+  perspective: 100px; }
+  .menu ul {
+    transform-origin: top;
+    position: absolute;
+    top: 0;
+    right: -300px; }
+    @media screen and (max-width: 400px) {
+      .menu ul {
+        height: 40px;
+        left: 0;
+        right: 0;
+        background-color: rgba(105, 203, 187, 0.1);
+        transform: rotateX(-120deg); } }
+    .menu ul li {
+      margin: 0 3px 0 -10px;
+      display: inline-block;
+      font-size: 26px;
+      font-weight: normal;
+      transition: transform 0.5s;
+      padding: 0 6px;
+      width: 80px;
+      text-align: center; }
+      @media screen and (max-width: 400px) {
+        .menu ul li {
+          font-weight: bold;
+          margin: 0; } }
+      .menu ul li:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        text-weight: bold;
+        background-color: rgba(105, 203, 187, 0.6);
+        border-radius: 50%; }
+    @media screen and (max-width: 400px) {
+      .menu ul .github {
+        float: left;
+        margin-left: 5%; } }
+    @media screen and (max-width: 400px) {
+      .menu ul .projects {
+        position: absolute;
+        left: -40px;
+        margin-left: 50%; } }
+    @media screen and (max-width: 400px) {
+      .menu ul .contact {
+        float: right;
+        margin-right: 5%; } }
+  .menu .dot {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #69CBBB;
+    display: block; }
+    @media screen and (max-width: 400px) {
+      .menu .dot {
+        display: none; } }
+
+.background-top {
+  perspective: 600px;
+  height: 800px; }
+  @media screen and (max-width: 1200px) {
+    .background-top {
+      height: 600px; } }
+  @media screen and (max-width: 800px) {
+    .background-top {
+      height: 450px; } }
+  @media screen and (max-width: 450px) {
+    .background-top {
+      height: 430px; } }
+
+.background-top-image {
+  position: relative;
+  background: url(images/mountains2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  text-align: center; }
+  .background-top-image .top-image-fade {
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    opacity: 0; }
+  @media screen and (max-width: 1200px) {
+    .background-top-image {
+      position: fixed; } }
+  @media screen and (max-width: 800px) {
+    .background-top-image {
+      position: fixed;
+      background: url(images/mountains2m.jpg);
+      background-repeat: no-repeat; } }
+  .background-top-image .name-wrap {
+    position: relative;
+    top: 190px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 60px 30px 40px 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(179, 179, 179, 0.5);
+    box-shadow: inset 1px 1px 5px 2px rgba(0, 0, 0, 0.3); }
+    @media screen and (max-width: 1200px) {
+      .background-top-image .name-wrap {
+        top: 120px; } }
+    @media screen and (max-width: 800px) {
+      .background-top-image .name-wrap {
+        top: 100px; } }
+    @media screen and (max-width: 450px) {
+      .background-top-image .name-wrap {
+        top: 120px; } }
+  .background-top-image .name-top-text {
+    font-size: 70px;
+    font-family: "Nothing You Could Do";
+    color: #fff; }
+    @media screen and (max-width: 800px) {
+      .background-top-image .name-top-text {
+        font-size: 50px; } }
+    @media screen and (max-width: 600px) {
+      .background-top-image .name-top-text {
+        font-size: 40px; } }
+    @media screen and (max-width: 450px) {
+      .background-top-image .name-top-text {
+        font-size: 30px; } }
+  .background-top-image .name-under-text {
+    position: relative;
+    font-size: 32px;
+    font-family: "Open Sans Condensed";
+    color: #ccc;
+    top: -20px; }
+    @media screen and (max-width: 800px) {
+      .background-top-image .name-under-text {
+        top: -12px;
+        font-size: 25px; } }
+    @media screen and (max-width: 600px) {
+      .background-top-image .name-under-text {
+        top: -12px;
+        font-size: 22px; } }
+    @media screen and (max-width: 450px) {
+      .background-top-image .name-under-text {
+        top: -8px;
+        font-size: 16px; } }
+
+.mountains {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  padding-top: 180px;
+  margin-top: -190px; }
+  .mountains .main-content-wrap {
+    background: #fff;
+    z-index: 10;
+    position: relative; }
+  .mountains .first-row .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid #69CBBB; }
+  .mountains .second-row .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid #fff; }
+  .mountains .first-row {
+    position: relative;
+    top: -125px;
+    height: 200px;
+    background: blue;
+    margin: auto;
+    width: 0; }
+    .mountains .first-row div:nth-of-type(1) {
+      left: -805px; }
+    .mountains .first-row div:nth-of-type(2) {
+      left: -625px;
+      top: 20px; }
+    .mountains .first-row div:nth-of-type(3) {
+      left: -325px; }
+      .mountains .first-row div:nth-of-type(3):after {
+        content: "";
+        left: -30px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid #fff; }
+    .mountains .first-row div:nth-of-type(4) {
+      left: -125px;
+      top: 30px; }
+    .mountains .first-row div:nth-of-type(5) {
+      left: 175px; }
+      .mountains .first-row div:nth-of-type(5):after {
+        content: "";
+        left: -50px;
+        position: absolute;
+        top: 0px;
+        width: 100px;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid #fff; }
+    .mountains .first-row div:nth-of-type(6) {
+      left: 425px;
+      top: 50px; }
+    .mountains .first-row .fisherman {
+      position: absolute;
+      top: 80px;
+      left: -235px;
+      width: 100px;
+      height: 100px;
+      background: url(images/fisherman2.png);
+      background-size: 100% 100%; }
+    .mountains .first-row .whiteout-blue {
+      background: #69CBBB;
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      margin-top: 200px; }
+  .mountains .second-row {
+    position: relative;
+    top: -300px;
+    height: 200px;
+    width: 0;
+    margin: auto; }
+    .mountains .second-row div:nth-of-type(1) {
+      left: -775px; }
+    .mountains .second-row div:nth-of-type(2) {
+      left: -605px;
+      top: 20px; }
+    .mountains .second-row div:nth-of-type(3) {
+      left: -475px; }
+    .mountains .second-row div:nth-of-type(4) {
+      left: -295px;
+      top: 30px; }
+    .mountains .second-row div:nth-of-type(5) {
+      left: -175px;
+      top: 0px; }
+    .mountains .second-row div:nth-of-type(6) {
+      left: 5px;
+      top: 0px; }
+    .mountains .second-row div:nth-of-type(7) {
+      left: 195px; }
+    .mountains .second-row div:nth-of-type(8) {
+      left: 385px;
+      top: 0px; }
+  .mountains .about-me {
+    width: 80%;
+    margin: -390px auto 0 auto;
+    position: relative;
+    z-index: 11;
+    padding-top: 80px; }
+    @media screen and (max-width: 800px) {
+      .mountains .about-me {
+        padding-top: 50px; } }
+    .mountains .about-me p {
+      color: #111;
+      font-size: 22px;
+      font-family: "Open Sans Condensed";
+      line-height: 28px; }
+      @media screen and (max-width: 800px) {
+        .mountains .about-me p {
+          font-size: 18px;
+          line-height: 24px; } }
+      @media screen and (max-width: 500px) {
+        .mountains .about-me p {
+          font-size: 16px;
+          line-height: 22px; } }
+    .mountains .about-me span {
+      color: #333;
+      font-size: 62px;
+      height: 50px;
+      margin-top: -12px;
+      font-family: "Open Sans Condensed";
+      float: left;
+      line-height: 74px; }
+      @media screen and (max-width: 800px) {
+        .mountains .about-me span {
+          font-size: 50px;
+          margin-top: -10px;
+          line-height: 66px; } }
+      @media screen and (max-width: 500px) {
+        .mountains .about-me span {
+          font-size: 46px;
+          margin-top: -10px;
+          line-height: 62px; } }
+    .mountains .about-me .quote {
+      color: #666;
+      font-size: 28px;
+      text-align: center;
+      font-family: "Nothing You Could Do"; }
+      @media screen and (max-width: 800px) {
+        .mountains .about-me .quote {
+          font-size: 22px; } }
+      @media screen and (max-width: 500px) {
+        .mountains .about-me .quote {
+          font-size: 16px; } }
+  .mountains .samples-text {
+    text-align: center;
+    font-family: "Open Sans Condensed";
+    color: #444;
+    font-size: 60px;
+    margin-top: 40px; }
+    @media screen and (max-width: 800px) {
+      .mountains .samples-text {
+        font-size: 40px; } }
+    @media screen and (max-width: 500px) {
+      .mountains .samples-text {
+        font-size: 30px; } }
+  .mountains ul.projects-list {
+    z-index: 15;
+    position: relative;
+    list-style-type: none;
+    text-align: center;
+    overflow: visible;
+    margin-top: 70px; }
+    @media screen and (max-width: 500px) {
+      .mountains ul.projects-list {
+        margin-top: 50px; } }
+    .mountains ul.projects-list li.parent-3d {
+      vertical-align: top;
+      margin: 10px;
+      display: inline-block;
+      perspective: 400px; }
+      @media screen and (max-width: 1120px) {
+        .mountains ul.projects-list li.parent-3d {
+          width: 22%;
+          margin: 1%; } }
+      @media screen and (max-width: 800px) {
+        .mountains ul.projects-list li.parent-3d {
+          width: 40%;
+          margin: 2%; } }
+      .mountains ul.projects-list li.parent-3d .child-3d {
+        width: 250px;
+        height: 250px;
+        transform-style: preserve-3d; }
+        @media screen and (max-width: 1120px) {
+          .mountains ul.projects-list li.parent-3d .child-3d {
+            width: 100%; } }
+        .mountains ul.projects-list li.parent-3d .child-3d p {
+          text-align: center;
+          width: 100%;
+          font-size: 30px;
+          font-family: "Open Sans Condensed";
+          color: #222; }
+          @media screen and (max-width: 1120px) {
+            .mountains ul.projects-list li.parent-3d .child-3d p {
+              font-size: 2.5vw; } }
+          @media screen and (max-width: 800px) {
+            .mountains ul.projects-list li.parent-3d .child-3d p {
+              font-size: 4vw; } }
+        .mountains ul.projects-list li.parent-3d .child-3d .frontside {
+          backface-visibility: hidden; }
+        .mountains ul.projects-list li.parent-3d .child-3d .backside {
+          backface-visibility: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: rotateY(180deg); }
+          .mountains ul.projects-list li.parent-3d .child-3d .backside .back-pic {
+            background: url(images/luke.jpg);
+            background-size: 100% 100%;
+            float: left;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; }
+          .mountains ul.projects-list li.parent-3d .child-3d .backside p {
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 10px; }
+            @media screen and (max-width: 1120px) {
+              .mountains ul.projects-list li.parent-3d .child-3d .backside p {
+                font-size: 2vw; } }
+            @media screen and (max-width: 800px) {
+              .mountains ul.projects-list li.parent-3d .child-3d .backside p {
+                font-size: 2.5vw; } }
+            @media screen and (max-width: 600px) {
+              .mountains ul.projects-list li.parent-3d .child-3d .backside p {
+                font-size: 3vw; } }
+          .mountains ul.projects-list li.parent-3d .child-3d .backside .back-button, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-github, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-site {
+            display: inline-block;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            background: #4286f4;
+            width: 48%;
+            border-radius: 2px;
+            padding: 5px 0;
+            cursor: pointer;
+            transition: background 0.3s; }
+            .mountains ul.projects-list li.parent-3d .child-3d .backside .back-button:hover, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-github:hover, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-site:hover {
+              background: #204582; }
+            @media screen and (max-width: 1120px) {
+              .mountains ul.projects-list li.parent-3d .child-3d .backside .back-button, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-github, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-site {
+                font-size: 1.5vw; } }
+            @media screen and (max-width: 800px) {
+              .mountains ul.projects-list li.parent-3d .child-3d .backside .back-button, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-github, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-site {
+                font-size: 2.5vw; } }
+            @media screen and (max-width: 600px) {
+              .mountains ul.projects-list li.parent-3d .child-3d .backside .back-button, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-github, .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-site {
+                font-size: 3vw; } }
+          .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-github {
+            float: left; }
+          .mountains ul.projects-list li.parent-3d .child-3d .backside .go-to-site {
+            float: right; }
+    .mountains ul.projects-list #about-project {
+      width: 30px;
+      height: 30px;
+      background: url(images/goTo.ico);
+      background-size: 100% 100%;
+      margin: 20px auto; }
+    .mountains ul.projects-list .li-pics, .mountains ul.projects-list .diy-audi, .mountains ul.projects-list .jedi, .mountains ul.projects-list .weather, .mountains ul.projects-list .supercar, .mountains ul.projects-list .intergalactic, .mountains ul.projects-list .solar-system, .mountains ul.projects-list .car-app, .mountains ul.projects-list .dreamsite {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      border-radius: 50%; }
+    .mountains ul.projects-list .diy-audi {
+      background: url(images/audiLogo.png);
+      background-size: 100% 100%; }
+    .mountains ul.projects-list .jedi {
+      background: url(images/luke.jpg);
+      background-size: 100% 100%; }
+    .mountains ul.projects-list .weather {
+      background: url(images/cloudyDay.png);
+      background-size: 100% 100%; }
+    .mountains ul.projects-list .supercar {
+      background: url(images/ferrari458.jpg);
+      background-size: 100% 100%; }
+    .mountains ul.projects-list .intergalactic {
+      background: url(images/enterprise.jpg);
+      background-size: 100% 100%; }
+    .mountains ul.projects-list .solar-system {
+      background: url(images/planet.png);
+      background-size: 100% 100%; }
+    .mountains ul.projects-list .car-app {
+      background: url(images/carLogo.png);
+      background-size: 100% 100%;
+      border-radius: 0; }
+    .mountains ul.projects-list .dreamsite {
+      background: url(images/cloudBulb.png);
+      background-size: 100% 100%;
+      border-radius: 0; }
+
+.line {
+  width: 40%;
+  height: 1px;
+  background: #69CBBB;
+  margin: auto; }
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.stalagmite-wrap {
+  margin-top: -200px;
+  position: relative; }
+
+.stalagmite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-top: 200px solid #fff; }
+
+.cave {
+  background: url(images/cave.jpg);
+  background-size: 100% 100%;
+  height: 700px; }
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #111;
+  z-index: 20; }
+
+.pop-up {
+  display: none;
+  opacity: 0;
+  padding: 5px;
+  position: fixed;
+  width: 450px;
+  height: 450px;
+  background: #111;
+  bottom: 0;
+  left: 50%;
+  margin-left: -225px;
+  bottom: 120px;
+  z-index: 100;
+  border-radius: 50%; }
+  .pop-up .pic {
+    margin: 10px;
+    bottom: 140px;
+    left: 20px;
+    position: absolute;
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    background: #fff; }
+    .pop-up .pic:before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      margin-left: 15px;
+      margin-top: 10px;
+      height: 130px;
+      background: #fff;
+      background: url(images/profile.png) no-repeat;
+      background-size: 100% 100%; }
+  .pop-up .pop-up-text {
+    background: url(images/talkBubble.png);
+    background-size: 100% 100%;
+    width: 225px;
+    height: 180px;
+    position: absolute;
+    right: 20px;
+    top: 120px;
+    text-align: center;
+    overflow-wrap: break-word; }
+    .pop-up .pop-up-text p {
+      font-weight: bold;
+      margin: 20px;
+      margin-top: 60px;
+      font-family: "Open Sans";
+      color: #555;
+      right: 10px; }
+  .pop-up .contact {
+    position: absolute;
+    top: 30px;
+    font-size: 26px;
+    text-align: center;
+    width: 450px; }
+    .pop-up .contact p {
+      font-family: "Open Sans Condensed";
+      color: #999; }
+  .pop-up .facebook {
+    width: 80px;
+    height: 80px;
+    background: url(images/facebook.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 140px; }
+  .pop-up .github {
+    width: 80px;
+    height: 80px;
+    background: url(images/github.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 230px;
+    border-radius: 50%; }
+  .pop-up .close {
+    color: #777;
+    position: absolute;
+    bottom: 5px;
+    width: 450px;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: lighter; }
+
+#snow-anima1 {
+  position: absolute;
+  background: url(images/snow1.png);
+  background-size: 100% 100%;
+  z-index: 1; }
+
+#snow-anima2 {
+  position: absolute;
+  background: url(images/snow2.png);
+  background-size: 100% 100%;
+  z-index: 1; }
+
+#snow-anima3 {
+  position: absolute;
+  background: url(images/snow3.png);
+  background-size: 100% 100%;
+  z-index: 1; }
+
+#snow-anima4 {
+  position: absolute;
+  background: url(images/snow4.png);
+  background-size: 100% 100%;
+  z-index: 1; }
+
+/*# sourceMappingURL=main.css.map */
